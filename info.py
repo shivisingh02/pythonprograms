@@ -1,0 +1,10 @@
+ # age = input("enter your age")
+# name = input("enter your name")
+# college = input("where do you study")
+# city = input("where do you live")
+#print(name , college , city , age)
+#print(type(name) , type(college) , type(city) , type(age))
+#age = int(age) #typecasting 
+a = int(input("enter a number"))
+b = int(input('enter a number'))
+print(a+b)
