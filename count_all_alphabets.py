@@ -24,4 +24,13 @@ for i , n in zip(ascii_lowercase , ascii_uppercase):
             max = counter2
             alpha = n
 print(f'the max ocurring letter is {alpha} and it ocurrs {max} times')
-       
+
+#wap to find vowels in the given data file
+for vowel in "aeiouAEIOU":
+    print(f'{vowel} is found {data.count(vowel)} times')
+#wap to remove all the punctuations from the string
+str= 'hel@rh$.!fbhhf!()jfgdhdh%#'
+from string import punctuation 
+for marks in punctuation:
+    str = str.replace(marks , '')
+print(str)
