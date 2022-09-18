@@ -21,4 +21,7 @@ msg2 = name.replace(" ", "  ")
 print(msg2)
 
 #wap to find all the vowels in the file
+for i in "aeiouAEIOU":
+    x = msg.count(i)
+    print(f"{i} occurs {x} times")
 
