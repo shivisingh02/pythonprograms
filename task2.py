@@ -1,3 +1,4 @@
+#find sum median mode and mean of given list of 10 numbers
 print("enter 10 numbers")
 num = []
 sum = 0
