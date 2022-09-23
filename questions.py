@@ -23,9 +23,16 @@ for i , d  in enumerate(words):
     str = str + " " + d
 print(str)
 #9
-print("Hi my name is Shivi\nI want to study Python\nI study at RRIMT" )
+data = ''
+while True:
+    line = input()
+    if not line:
+        break
+    data += line + '\n'
+print (data) 
 #10
-str = """to move to newline '\n' is used"""
+str = """to move to newline '\\n' is used""" #double slash to escape backslash 
+print(r'\n')
 print(str)
 #11
 n  = 15 
