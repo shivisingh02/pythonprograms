@@ -1,18 +1,24 @@
-import pgzrun 
-width = 500
-height = 400 
+#functions 
+import pgzrun #library has actor and keyboard logic
+WIDTH = 500
+HEIGHT = 400 
  
 p = Actor('ironman' , (200,200))
-def draw():
+def draw(): #DEF KEYWORD MEANS DEFINING draw is important to write 
+#draw defines screen colour 
     screen.fill('black')
     p.draw()
-def update():
+def update(): #update executes the function within it repeatitevely 
     if keyboard.left:
         p.x -= 2 
+        p.angle = 10 
     elif keyboard.right:
-        p.x += 2 
+        p.x += 2
+        p.angle = -10  
     elif keyboard.up:
         p.y -= 2 
     elif keyboard.down:
         p.y += 2
+    else:
+        p.angle = 0
 pgzrun.go()
