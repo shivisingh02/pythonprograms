@@ -47,13 +47,15 @@ def check_collision():
         gameover = True
 
 def draw():
+
     if not gameover:
         screen.clear()
         e.draw()
         p.draw()
     else:
-        screen.fill('red')
-        screen.draw.text('Game Over' , center = (WIDTH//2 , HEIGHT//2) , color = 'white' , fontsize = 100)
+         screen.fill('red')
+         screen.draw.text('Game Over' , center = (WIDTH//2 , HEIGHT//2) , color = 'white' , fontsize = 100)
+
 def update():
     player_movement()
     enemy_movement()
