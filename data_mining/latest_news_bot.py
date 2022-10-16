@@ -44,10 +44,11 @@ def main(filename = 'latest_news.csv'):
             headlines = get_news_list(soup)
             if headlines:
                 all_headlines.extend(headlines)
-                pos += 1 
-    time = datetime.datetime.now().strftime("%Y-%m_%d_%H")
-    filename = f'{time}_{filename}'
-    pd.DataFrame(all_headlines).to_csv(filename, index = False)
+                pos += 1
+    if len(all_headlines)>0:
+        time = datetime.datetime.now().strftime("%Y-%m_%d_%H")
+        filename = f'{time}_{filename}'
+        pd.DataFrame(all_headlines).to_csv(filename, index = False)
 
 if __name__ == '__main__':
     main()
